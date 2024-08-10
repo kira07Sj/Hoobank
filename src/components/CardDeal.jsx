@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Clinet = () => {
+const CardDeal = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const Clinet = () => {
   )
 }
 
-export default Clinet
+export default CardDeal
