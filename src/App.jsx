@@ -3,6 +3,7 @@ import styles from './style'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Stats from './components/Stats'
+import Business from './components/Business'
 
 
 const App = () => 
@@ -22,8 +23,10 @@ const App = () =>
       </div>
 
       <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
+        <div className={`${styles.boxWidth}  flex-col flex  items-center`}>
           <Stats/>
+          <Business/>
+
         </div>
       </div>
 
