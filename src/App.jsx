@@ -2,6 +2,9 @@ import React from 'react'
 import styles from './style'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import Stats from './components/Stats'
+
+
 const App = () => 
   (
 
@@ -20,7 +23,7 @@ const App = () =>
 
       <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
-          
+          <Stats/>
         </div>
       </div>
 
