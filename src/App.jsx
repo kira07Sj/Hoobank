@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Stats from './components/Stats'
 import Business from './components/Business'
+import Billing from './components/Billing'
 
 
 const App = () => 
@@ -26,6 +27,7 @@ const App = () =>
         <div className={`${styles.boxWidth}  flex-col flex  items-center`}>
           <Stats/>
           <Business/>
+          <Billing/>
 
         </div>
       </div>
