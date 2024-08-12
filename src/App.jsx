@@ -6,6 +6,7 @@ import Stats from './components/Stats'
 import Business from './components/Business'
 import Billing from './components/Billing'
 import CardDeal from './components/CardDeal'
+import Testimonials from './components/Testimonials'
 
 
 const App = () => 
@@ -30,6 +31,7 @@ const App = () =>
           <Business/>
           <Billing/>
           <CardDeal/>
+          <Testimonials/>
 
         </div>
       </div>

@@ -146,3 +146,33 @@
  box-shadow: 0 0 10px rgb(19, 144, 186);
 }
 
+.xxs{}
+.xxs-h{}
+.xxs-para{}
+.xxs-img{}
+.xxs-title{}
+.xxs-carddeals{}
+@media (max-width: 330px) {
+  
+  .xxs{
+    width: 100%;
+  }
+  .xxs-h{
+    font-size: 16px;
+  }
+  .xxs-para{
+    font-size: 17px;
+  }
+  .xxs-img{
+    transform: scale(.9);
+    margin: -4px 0 -6px 0;
+  }
+  .xxs-title{
+    font-size: 13px;
+  }
+  .xxs-carddeals{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
