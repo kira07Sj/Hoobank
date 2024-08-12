@@ -152,6 +152,11 @@
 .xxs-img{}
 .xxs-title{}
 .xxs-carddeals{}
+
+.clientHover:hover
+{
+transform: rotateZ(10deg); 
+}
 @media (max-width: 330px) {
   
   .xxs{
