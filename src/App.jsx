@@ -5,6 +5,7 @@ import Hero from './components/Hero'
 import Stats from './components/Stats'
 import Business from './components/Business'
 import Billing from './components/Billing'
+import CardDeal from './components/CardDeal'
 
 
 const App = () => 
@@ -28,6 +29,7 @@ const App = () =>
           <Stats/>
           <Business/>
           <Billing/>
+          <CardDeal/>
 
         </div>
       </div>
