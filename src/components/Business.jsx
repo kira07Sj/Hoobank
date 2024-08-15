@@ -24,8 +24,8 @@ const FeatureCard = ({icon,title,content, index}) =>(
 
 const Business = () => {
   return (
-    <section id="features" className={`${layout.section}  w-[86%]`}>
-      <div className={layout.sectionInfo}>
+    <section id="features" className={`${layout.section} view  w-[86%]`}>
+      <div className={`${layout.sectionInfo} appearanime`}>
         <h2 className={`${styles.heading2} max-xs:text-[33px]`}>You do the business,
           <br className=" sm:block" /> we’ll handle 
           the money.</h2>
