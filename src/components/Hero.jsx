@@ -3,7 +3,9 @@ import { discount, robot } from "../assets"
 import GetStarted from './GetStarted'
 
 
-const Hero = () =>  (
+const Hero = () => { 
+  
+  return (
   
     <section id='home' className={`view flex w-[86%]   md:flex-row flex-col
        ${styles.paddingY}`}>
@@ -72,6 +74,6 @@ const Hero = () =>  (
       
        </section>
   )
-
+}
 
 export default Hero

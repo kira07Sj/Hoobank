@@ -12,8 +12,8 @@ import CTA from './components/CTA'
 import Footer from './components/Footer'
 
 
-const App = () => 
-  (
+function App() { 
+    return (
 
     <div className=' bg-primary w-full overflow-hidden'>
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
@@ -47,7 +47,7 @@ const App = () =>
   </div>
    
   )
-
+}
 
 
 export default App

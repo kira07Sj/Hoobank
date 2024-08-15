@@ -1,7 +1,8 @@
 import {quotes}  from '../assets'
 
 
-const FeedbackCard = ({content, name, title, img}) => (
+const FeedbackCard = ({content, name, title, img}) =>{
+  return  (
     <div className="flex justify-between flex-col
     px-10 py-12 max-xs:px-5 rounded-[20px] max-w-[375px]
     max-h-[395px] md:mr-10 sm:mr-5 mr-0 max-xs:max-w-full feedback-card">
@@ -21,6 +22,6 @@ const FeedbackCard = ({content, name, title, img}) => (
       </div>
     </div>
   )
-
+}
 
 export default FeedbackCard

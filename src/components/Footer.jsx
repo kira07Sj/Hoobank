@@ -2,7 +2,8 @@ import styles from "../style"
 import { logo } from "../assets"
 import { footerLinks, socialMedia } from "../constants"
 
-const Footer = () => (
+const Footer = () =>{ 
+    return (
     <section className={`${styles.flexCenter} ${styles.paddingY}
      w-full flex-col`}>
 
@@ -61,6 +62,6 @@ const Footer = () => (
       </div>
      </section>
   )
-
+}
 
 export default Footer

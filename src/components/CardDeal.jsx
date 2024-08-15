@@ -2,7 +2,8 @@ import { card } from "../assets"
 import styles, {layout} from "../style"
 import Button from "./Button"
 
-const CardDeal = () =>  (
+const CardDeal = () => {
+  return (
     <section className={`${layout.section} w-[95%]`}>
       <div className={`${layout.sectionInfo} sm:ml-[4.3rem] `}>
         <h2 className='text-white sm:text-[48px] text-[30px] font-poppins
@@ -27,5 +28,5 @@ const CardDeal = () =>  (
 
     </section>
   )
-
+}
 export default CardDeal

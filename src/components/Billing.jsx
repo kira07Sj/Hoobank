@@ -1,7 +1,8 @@
 import {apple,bill,google} from '../assets'
 import styles, {layout} from '../style'
 
-const Billing = () =>  (
+const Billing = () =>{
+  return  (
     <section id='product' className={`${layout.sectionReverse}
       w-[86%] gap-10`}>
       <div className={`${layout.sectionImgReverse}`}>
@@ -32,6 +33,6 @@ const Billing = () =>  (
       </div>
     </section>
   )
-
+}
 
 export default Billing
