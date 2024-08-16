@@ -1,17 +1,23 @@
 import styles from "../style"
 import { discount, robot } from "../assets"
 import GetStarted from './GetStarted'
-
+import { useEffect } from "react"
+import Aos from "aos"
+import 'aos/dist/aos.css'
 
 const Hero = () => { 
+
+  useEffect(()=>{
+      Aos.init({duration: 2000})
+  },[])
   
   return (
   
     <section id='home' className={`view flex w-[86%]   md:flex-row flex-col
        ${styles.paddingY}`}>
         
-        <div className={` flex-1 ${styles.flexStart} flex-col left-rightanime
-         xl:px-0 sm:px-16 max-xs:px-2 px-6`}>
+        <div className={` flex-1 ${styles.flexStart} flex-col 
+         xl:px-0 sm:px-16 max-xs:px-2 px-6`} data-aos="fade-down">
 
           <div className="flex flex-row py-[6px] px-4 items-center 
            bg-discount-gradient  rounded-[10px] mb-2">
@@ -35,7 +41,8 @@ const Hero = () => {
               span> {" "} <br />
               </h1>
               
-              <div className=" ss:flex hidden md:mr-4 mr-0">
+              <div className=" ss:flex hidden md:mr-4 
+              mr-0" data-aos="fade-in" data-aos-delay="2300">
                <GetStarted></GetStarted>
               </div>
             </div>
@@ -55,9 +62,10 @@ const Hero = () => {
         </div>
 
       <div className={` flex flex-1 ${styles.flexCenter}
-           md:my-0 my-10 relative`}>
+           md:my-0 my-10 relative`} data-aos="fade-left"
+           data-aos-delay="100">
         <img src={robot} alt="robot" className="w-[100%]
-        h-[100%] py-0 relative z-[5] appearanime" />
+        h-[100%] py-0 relative z-[5] " />
 
         <div className=" absolute z-[0] w-[40%]
         h-[35%] top-0 pink__gradient"/>

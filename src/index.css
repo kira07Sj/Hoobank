@@ -182,37 +182,3 @@ transform: rotateZ(10deg);
     gap: 8px;
   }
 }
-
-.left-rightanime{
-
-  animation: left-right 1.5s linear;
-  animation-timeline:view();
-  animation-range: entry 0% cover 40%;
-}
-
-.appearanime{
-  animation: appear 1.5s linear;
-}
-
-@keyframes left-right
-{
-  from{
-    opacity: 0;
-    transform: translateX(-5rem);
-  }
-  to{
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes appear
-{
-  from{
-    opacity: 0;
-    scale: 0.5;
-  }
-  to{
-    opacity: 1;
-    scale: 1;
-  }
-}

@@ -1,11 +1,18 @@
 import {quotes}  from '../assets'
+import { useEffect } from "react"
+import Aos from "aos"
+import 'aos/dist/aos.css'
 
 
-const FeedbackCard = ({content, name, title, img}) =>{
+const FeedbackCard = ({content, name, title, img, delay}) =>{
+  useEffect(()=>{
+    Aos.init({duration: 2000})
+},[])
   return  (
     <div className="flex justify-between flex-col
     px-10 py-12 max-xs:px-5 rounded-[20px] max-w-[375px]
-    max-h-[395px] md:mr-10 sm:mr-5 mr-0 max-xs:max-w-full feedback-card">
+    max-h-[395px] md:mr-10 sm:mr-5 mr-0 max-xs:max-w-full
+     feedback-card" data-aos="fade-right" data-aos-delay={delay}>
       <img src={quotes} alt="quotes" className='w-[42px]
        h-[27px] object-contain xxs-img' />
        <p className='font-poppins font-normal text-[18px]

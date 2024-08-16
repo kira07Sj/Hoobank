@@ -51,6 +51,7 @@ export const feedback = [
     name: "Herman Jensen",
     title: "Founder & Leader",
     img: people01,
+    delay: "0",
   },
   {
     id: "feedback-2",
@@ -59,6 +60,7 @@ export const feedback = [
     name: "Steve Mark",
     title: "Founder & Leader",
     img: people02,
+    delay: "200",
   },
   {
     id: "feedback-3",
@@ -67,6 +69,7 @@ export const feedback = [
     name: "Kenn Gallagher",
     title: "Founder & Leader",
     img: people03,
+    delay: "400",
   },
 ];
 
@@ -75,16 +78,19 @@ export const stats = [
     id: "stats-1",
     title: "User Active",
     value: "3800+",
+    delay: "0",
   },
   {
     id: "stats-2",
     title: "Trusted by Company",
     value: "230+",
+    delay: "200",
   },
   {
     id: "stats-3",
     title: "Transaction",
     value: "$230M+",
+    delay: "400",
   },
 ];
 
