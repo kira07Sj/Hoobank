@@ -14,7 +14,7 @@ const NavBar = () => {
 
       <ul className='list-none sm:flex hidden justify-end
        items-center flex-1'>
-        {navLinks.map((item, index) =>(
+        {navLinks.map((item) =>(
           <li key={item.id}
               className=' font-poppins font-normal 
               cursor-pointer text-neutral-100 ml-10 text-[16px]'>
@@ -35,12 +35,12 @@ const NavBar = () => {
             rounded-xl sidebar`}>
                 <ul className='list-none flex flex-col justify-end
                 items-center flex-1'>
-                  {navLinks.map((item, index) =>(
-                    <li key={item.id}
+                  {navLinks.map((navitem) =>(
+                    <li key={navitem.id}
                         className=' font-poppins font-normal 
                         cursor-pointer text-neutral-100 mb-4 text-[16px]'>
-                      <a href={`#${item.id}`}>
-                        {item.title}
+                      <a href={`#${navitem.id}`}>
+                        {navitem.title}
                       </a>
                     </li>
                   ))}

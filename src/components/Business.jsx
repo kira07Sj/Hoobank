@@ -56,7 +56,7 @@ const Business = () => {
       `} >
         {features.map((item,index)=>(
           <FeatureCard   key={item.id} {...item}
-           index={index}/>
+           indexs={index}/>
         ))}
       </div>
        

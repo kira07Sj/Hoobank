@@ -12,7 +12,7 @@ const Testimonials = () => {
 },[])
   return (
     <section id="clients" className={`${styles.paddingY}
-     ${styles.flexCenter} flex-col relative w-[86%] xxs`}>
+     ${styles.flexCenter} flex-col relative w-[100%] xxs`}>
 
       <div className=" absolute z-[0] w-[60%] h-[60%]
        -right-[50%] rounded-full blue__gradient"/>
