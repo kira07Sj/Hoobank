@@ -1,54 +1,33 @@
-import { useState } from 'react'
-import {close, logo, menu} from '../assets'
-import {navLinks} from '../constants'
+import React from 'react'
+import logo from '../assets/logo.png'
+import { navLinks } from '../constants'
+import Menu from '../assets/menu.svg'
 
 
-function Navbar() {
-
-  const [toggle, setToggle] = useState(false)
-
+const Navbar = () => {
   return (
-    <nav className=' w-full flex py-6 justify-between
-     items-center navbar'>
-      <img src={logo} alt="hoobank" className='w-[124px] h-[32px]' />
+    <nav className='flex fixed top-0 left-0 w-full  z-30 backdrop-blur-sm  items-center justify-between px-[4rem] max-md:px-[1rem] py-4 '>
+      <a href="#Home" className='flex items-center gap-2 flex-row justify-center'>
+         <img src={logo} alt="logo" width={40} />
+            <h1 className='text-white text-[2rem] max-md:text-[1.7rem]  font-bold'>Hoobank</h1>
+          </a>
 
-      <ul className='list-none sm:flex hidden justify-end
-       items-center flex-1'>
-        {navLinks.map((item) =>(
-          <li key={item.id}
-              className=' font-poppins font-normal 
-              cursor-pointer text-neutral-100 ml-10 text-[16px]'>
-            <a href={`#${item.id}`}>
-              {item.title}
-            </a>
-          </li>
-        ))}
-       </ul>
-
-       <div className=' sm:hidden flex flex-1 justify-end
-        items-center fixed right-10 z-[15]'>
-          <img src={toggle ? close : menu} onClick={()=> setToggle((prev) => !prev)} alt="menu" 
-          className='w-[28px] h-[28px] object-contain'/>
-
-          <div className={`${toggle ? 'flex' : 'hidden'} p-6 bg-black-gradient
-           absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-[5]
-            rounded-xl sidebar`}>
-                <ul className='list-none flex flex-col justify-end
-                items-center flex-1'>
-                  {navLinks.map((navitem) =>(
-                    <li key={navitem.id}
-                        className=' font-poppins font-normal 
-                        cursor-pointer text-neutral-100 mb-4 text-[16px]'>
-                      <a href={`#${navitem.id}`}>
-                        {navitem.title}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-            
-           </div>
+        <div className={`flex flex-row items-center justify-center  max-md:hidden`}>
+            {navLinks.map((itmes)=>(
+                <a className='text-white text-[20px] mx-3 cursor-pointer
+                 hover:text-blue-300 font-semibold' key={itmes.id} href={itmes.link}>{itmes.title}</a>
+            ))}
         </div>
-     </nav>
+
+        <img src={Menu} alt="Menu" className='flex md:hidden' width={30}/>
+
+        <div className={`flex flex-col items-center justify-center  max-md:hidden`}>
+            {navLinks.map((itmes)=>(
+                <a className='text-white text-[20px] mx-3 cursor-pointer
+                 hover:text-blue-300 font-semibold' key={itmes.id} href={itmes.link}>{itmes.title}</a>
+            ))}
+        </div>
+    </nav>
   )
 }
 

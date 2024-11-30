@@ -3,7 +3,7 @@ import styles from "../style"
 
 const Stats = () => {
   return (
-    <section className={`${styles.flexCenter} flex-row 
+    <section  className={`${styles.flexCenter} flex-row 
      flex-wrap sm:mb-20 gap-20  `}>
       <div className="w-[100%] flex max-sm:flex-col items-start flex-row 
       sm:mb-20 max-sm:mb-[3rem] gap-4">

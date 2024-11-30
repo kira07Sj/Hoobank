@@ -12,7 +12,7 @@ const CardDeal = () => {
 },[])
 
   return (
-    <section className={`${layout.section} w-[95%]`}>
+    <section id="products" className={`${layout.section} w-[95%]`}>
       <div className={`${layout.sectionInfo} sm:ml-[4.3rem] `}>
         <h2 className='text-white sm:text-[48px] text-[30px] font-poppins
          sm:leading-[76px] font-semibold  mb-5 '
