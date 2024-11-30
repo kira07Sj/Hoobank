@@ -1,11 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 import logo from '../assets/logo.png'
 import { navLinks } from '../constants'
 import Menu from '../assets/menu.svg'
+import Close from '../assets/close.svg'
 
 
 const Navbar = () => {
+
+    const [IsOpen, SetIsOpen] = useState(false)
   return (
+
+    
     <nav className='flex fixed top-0 left-0 w-full  z-30 backdrop-blur-sm  items-center justify-between px-[4rem] max-md:px-[1rem] py-4 '>
       <a href="#Home" className='flex items-center gap-2 flex-row justify-center'>
          <img src={logo} alt="logo" width={40} />
@@ -19,14 +24,18 @@ const Navbar = () => {
             ))}
         </div>
 
-        <img src={Menu} alt="Menu" className='flex md:hidden' width={30}/>
-
-        <div className={`flex flex-col items-center justify-center  max-md:hidden`}>
+        <div className={`${IsOpen ? 'flex' : 'hidden'} fixed bg-primary  w-full top-[4rem]  flex-col items-center justify-center `}>
             {navLinks.map((itmes)=>(
-                <a className='text-white text-[20px] mx-3 cursor-pointer
+                <a onClick={()=>(SetIsOpen(false))} className='text-white text-[20px] mx-3 my-3 p-3 cursor-pointer
                  hover:text-blue-300 font-semibold' key={itmes.id} href={itmes.link}>{itmes.title}</a>
             ))}
         </div>
+
+        <img onClick={()=>SetIsOpen(true)} src={Menu} alt="Menu" className={`${IsOpen ? 'hidden' : 'flex'} flex md:hidden`} width={30}/>
+        <img onClick={()=>SetIsOpen(false)} src={Close} alt="close" className={`${IsOpen ? 'flex':'hidden'}`} width={30}/>
+        
+
+        
     </nav>
   )
 }
