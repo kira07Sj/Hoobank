@@ -9,7 +9,7 @@ import Testimonials from './components/Testimonials';
 import Clients from './components/Clients';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navigation.jsx';
 
 
 function App() { 
