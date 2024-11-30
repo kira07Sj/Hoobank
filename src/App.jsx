@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './style';
-import Navbar from './components/Navbar';
+import Navbar from './components/navbar';
 import Hero from './components/Hero';
 import Stats from './components/Stats';
 import Business from './components/Business';
