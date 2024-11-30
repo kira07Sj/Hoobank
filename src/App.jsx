@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './style';
-
 import Hero from './components/Hero';
 import Stats from './components/Stats';
 import Business from './components/Business';
@@ -10,6 +9,7 @@ import Testimonials from './components/Testimonials';
 import Clients from './components/Clients';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 
 
 function App() { 
@@ -18,7 +18,7 @@ function App() {
     <div className=' bg-primary w-full overflow-hidden'>
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
-          
+          <Navbar/>
         </div>
       </div>
 
